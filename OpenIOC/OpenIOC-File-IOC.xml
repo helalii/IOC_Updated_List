@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ioc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.mandiant.com/2010/ioc" id="8decc381-eebb-4911-ab65-6157690613db" last-modified="2025-08-16T19:47:52">
+  <short_description>01-to-07-August</short_description>
+  <description>01-to-07-August</description>
+  <keywords/>
+  <authored_by>Eslam-ElHelaly - Alienvault OTX</authored_by>
+  <authored_date>2025-08-16T19:47:52</authored_date>
+  <links>
+    <link rel="https://otx.alienvault.com/pulse/689c465de3a2e8ea4647f197">https://otx.alienvault.com/pulse/689c465de3a2e8ea4647f197</link>
+  </links>
+  <definition>
+    <Indicator id="6b8679e6-c383-43c4-8284-e9b9af18a5e4" operator="OR">
+      <IndicatorItem id="311517dd-301a-48b8-beaf-9ced08a937eb" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">170.130.55.60</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e0689759-fef0-449d-aa3e-32cca36d2fab" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">170.130.165.176</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c2bd054a-abe9-447a-a315-c957c799b446" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">173.232.146.43</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a3d140e7-d244-4435-91db-caebcd461b35" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.212.44.235</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f8165ca-ea28-4054-9b26-61e4d3b015ac" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.212.47.197</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6a58e596-f2da-462c-b599-f6e053f4148f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.138.9.203</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55142ec6-41cf-4ef1-91ec-fee9860a8626" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.138.9.229</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30b575cf-88bc-42df-a892-ac91539740cf" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">79.132.130.114</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1a4eb156-33ba-4116-bf1e-30d244428dbc" condition="contains">
+        <Context document="FileItem" search="FileItem/Md5sum" type="mir"/>
+        <Content type="md5">5235486e28eaacae0fa547140e4132a5</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43e79ebb-2442-409f-a594-942c06622cfb" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">0cfa7550862eeb682b1469d372c18100f8ea9732</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ca65a44a-8a25-4b08-8167-a636f5d8284c" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">3bea1f83435c80fd0420cf8e8d28b91c5c8fd82f</Content>
+      </IndicatorItem>
+      <IndicatorItem id="30adf6da-492b-43dc-95a1-0ec7065b02a4" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">59e94550d5276396cec60416e889c4d76327e766</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2dcfad39-f263-4dac-a022-f208d15472b5" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">5b8089b713873631a3fb924871999714c0a043a4</Content>
+      </IndicatorItem>
+      <IndicatorItem id="52104ebb-5d41-4fab-b18e-51373ffb0341" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">73edeb02f412667da16bfb7021ff6ed37de2f017</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b95a0636-383c-4c1c-bb1d-ac97049337a2" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">c3159b4d21ec0b3eb1316cc9fa87ce85561f56ea</Content>
+      </IndicatorItem>
+      <IndicatorItem id="510e4344-22b7-4c02-8078-21bb49b979ac" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha1sum" type="mir"/>
+        <Content type="sha1">f2bd46ec26f9df257c116b2eba7c348e1e44f21e</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7b8dfb4e-6c36-474b-a353-e8ddece5b787" condition="contains">
+        <Context document="FileItem" search="FileItem/Sha256sum" type="mir"/>
+        <Content type="sha256">76ad95416d506dc408f77e8501db8df017bb4c6454c023c5324e0d228089913b</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b5d3dc7-48a6-4bfc-9b05-f51ae54932ca" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">107.158.128.96</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2367262e-d51c-428f-b1be-058798d9f929" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">144.172.94.127</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1f5eb704-d0a6-4dd0-8048-ec611e73a3d0" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">173.232.146.182</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a3a8cb30-16c7-4194-8bf3-f46acd85c1f6" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">173.232.146.212</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d45e4eec-b763-4fac-b7d8-1b822e1546fc" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">173.232.146.220</Content>
+      </IndicatorItem>
+      <IndicatorItem id="66683097-7e89-460b-a3c6-aabeda063155" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">176.10.111.252</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b163fa3-7390-4adc-9f2b-43dfe0748c91" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">176.10.118.136</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4f9c5eb0-667a-4c75-a02c-da9affb88db8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.178.231.156</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e116c94-8b23-47c3-a6a1-05de45586d11" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.178.231.211</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0e8e4e04-a51d-4920-a06f-3d219d1f3f3f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.178.231.83</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8bce7c30-a66b-487e-b202-dd45cfe40ba6" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.189.151.229</Content>
+      </IndicatorItem>
+      <IndicatorItem id="78ddad8a-0393-4371-98d4-1b56ac8f6c0c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.212.44.113</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ad18f560-ff90-4940-a206-056c8dc976b3" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.212.44.25</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d5f831b-dd87-4796-923c-534e0d394ddf" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.212.47.146</Content>
+      </IndicatorItem>
+      <IndicatorItem id="89d3b1b5-1eb5-49fb-95a4-dc16887bcb4f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.212.47.98</Content>
+      </IndicatorItem>
+      <IndicatorItem id="090f64da-7a59-40f7-a843-280086afc9e1" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.219.221.108</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3852e207-e109-43fe-8a89-4544698f0497" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.90.162.179</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d383f061-2245-4dc9-9a6f-825d4f0ae685" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">185.90.162.217</Content>
+      </IndicatorItem>
+      <IndicatorItem id="552b35d4-4cf9-4b08-9cf0-77d8b086911e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">192.159.99.134</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0a748707-61e3-4ae0-a264-6e57bd4172bd" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">194.33.34.44</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7c5e358f-af89-49eb-aa4d-43ea8185d6d1" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.138.9.109</Content>
+      </IndicatorItem>
+      <IndicatorItem id="04a37cc8-1ee7-4f10-b18e-af8024ad4573" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.138.9.140</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8c754615-73a1-41b3-ac9a-5e7a6149ad50" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.138.9.151</Content>
+      </IndicatorItem>
+      <IndicatorItem id="7bae079a-8809-43cb-bf9f-e55445a9d9b4" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.138.9.230</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0f2737a6-1c8a-4d5d-9c34-f3d017913feb" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.138.9.253</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8d58bcab-f575-4897-bc40-8fd7bc50b039" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">78.138.9.49</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b18c6536-d033-4ba4-b85e-a776010067b8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">79.132.128.31</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9ba2ce2e-8978-4824-9691-d927abec5624" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">79.132.130.138</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ee9ee4f4-a47f-401b-9725-82c632fd00d2" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">79.132.135.215</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e03c261b-869f-4d1a-a4d4-514573bc906c" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">80.77.25.213</Content>
+      </IndicatorItem>
+      <IndicatorItem id="890090cd-5a92-4e6c-afca-168af0990191" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.241.93.140</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bec945b1-eec9-46e2-ba15-05e0bd2e7b2f" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">91.241.93.151</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6caae6af-4451-46e2-9876-a08fb98a5009" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">94.247.42.221</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2e3eacec-2ecc-430b-b9a9-4f1591fd599e" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">94.247.42.45</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f83d4052-13c3-418d-a98f-9618d395d7d8" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">94.247.42.64</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f882e07f-2133-485b-839a-4f10931c3bda" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">95.179.227.164</Content>
+      </IndicatorItem>
+      <IndicatorItem id="595aaa83-3658-4e4b-a078-9872760bee41" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">access-docus.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5c405d8e-9b60-46af-b462-be31eb04e376" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">access-files.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3c2a69f7-80c0-44ea-aa56-f632663002d2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">accessdocfiles.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6fd1e6de-8555-43ab-8777-d5e367b83f64" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">alberto-club.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6fa35d91-a079-4ad2-9fe2-feba9e6efaab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">check-folder.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="43ad8c54-9551-44fe-b37f-3186309265e9" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">confidential-doc.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="261301d2-92ad-409f-9844-6a8c3e640447" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">confidentialaccess.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f1679bff-c0eb-41f5-b3b1-eeffe4f93216" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">digitalarchieve.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d5a06f45-9ed6-438a-970d-e9203017ba4b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">doc-excrofile.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="93a4b984-780e-486f-af49-3f22449b8ffb" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">docassessment.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b9e7f7cf-0b04-41f8-be3f-d817f376bb99" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">docu-check.website</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9f2753ff-d3bb-4f53-bed1-e216f25e499f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">docu-vault.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1db01532-f94c-4664-910e-1ec2d1ba2e64" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">document-portal.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2faf4dbb-75e4-4f57-a5f4-1215acfecd46" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">document-safe.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9c8ca0bb-c231-4baa-9d79-5e857f71c2dd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">document-viewer.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d19d89c2-4074-4662-9688-35ee8adf84bd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">documenthub.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="31270454-4d51-42b2-ac73-ad5b7426f1d0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">documentportal.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="10a9eaa4-3ac8-445f-99bc-63e25da01b57" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">documents-onedrive.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="519443cb-d5af-4283-8577-fcff6aff19c2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">documentsportal.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ea28448c-247f-4c80-8861-08c56c4c07fc" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">documentvault.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b8a629a9-7676-4a43-9bfb-0f0c2cbc9679" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">docus-vault.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4130f46a-ed11-4f00-baac-83dacf22fad2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">docusecure-onedrive.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="dc5fc252-4907-4e34-b452-64845033325e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">docuvault.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c561b452-ffa2-46fb-ae3f-34ee720d9575" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">doucments-vault.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="746a164a-9457-40e2-be91-4af022073ef8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">encrypted-files.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="98fd1e44-fa23-4a28-8cfa-549fe9215361" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">encryptedpdfdoc.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="83471d01-9f66-4bb9-96ab-8601c55a2528" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">file-auth.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a237d807-f224-4e7a-8c99-9fc35ee1b6ba" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">fileaccesspoint.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c994d843-9b07-460e-b426-7327b344b43c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">filegateway.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2f4d5e46-ee3f-4f16-87eb-5da961e56832" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">files-vault.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36470798-6529-4fe0-b6bc-710ffd3629ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">folder-station.info</Content>
+      </IndicatorItem>
+      <IndicatorItem id="32ba9379-c0cb-4382-b85a-bedd2e6945aa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">instantdocview.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="66be7046-634e-4320-b003-64525fb6ba50" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">locked-docu.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="95a5c993-9300-45ce-8c4b-3e73a4a789d8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">locked-document.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ddad5ec5-d0e5-497f-b98d-fedfd1ad70ef" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">locked-folder.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0cb3a385-ceca-4b88-926a-2d232ee7e8db" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">officxonlinedocs.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="767dcfc2-3667-4fce-9adc-01ccd6753c30" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">offlice45.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e3e2430e-2d92-4d60-9c95-e12731a8beec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">offlicie065.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="838e509d-70ae-4a27-ac90-29433589d7ed" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">ofiice665.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="02c266a8-ca57-4c81-8b4d-62438602125f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">one-drivefiles.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="653d8183-d33d-4dc0-8835-4a7350b91631" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onedrive-docu.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="26dc3ea7-261b-4b56-936b-18e8c52ae5a0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onedrive-documents.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5763fa91-5fd9-48a8-b91e-8ff40f55fd26" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onedrive-files.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2b8c64f7-026f-4b64-a3fa-5d7ba97dc7e5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onedrive-requestquote.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="141e900e-d5d6-4ea9-a9b9-acb2ad7006fa" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onedrive-safe.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="aa810809-4aa4-4ac5-991f-be9d460b65a5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onedrivedocument.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="274653f2-040f-4371-ab81-c14f60629d87" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onedrivedocuments.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1c0baed3-c00b-4658-b158-5a05a01939ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">onedrivedocusafe.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="409f30c5-cb5d-4183-a865-8fb27c0d6f4c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">privatedocs.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e8106be3-8c62-48b6-a551-be9ae8c11be8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">project-docu.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0456ab3e-40d0-47a1-895e-6fbffb7928fd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">project-documents.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9b1cbea2-476b-4f39-a84c-bedbef286c73" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">project-docus.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bec1d9ca-2b59-4dce-a495-6b746c97c99e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">project-folder.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="cbdc749b-bf90-40d1-a8e6-aa1a374b82b1" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">projectdocufiles.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="27722811-4751-4d53-870a-9ea3ba549ea2" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">projectdocument.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="5b846337-22fb-48f0-a7a4-804f52b97817" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">projectdocumentfile.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="36427a60-c6c4-4a28-bbcc-d5a51f946991" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">projectdocusafe.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="b1137208-7e26-46e0-8def-2ccc8eca23b8" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">projectproposal.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3ac9725b-86d8-42b1-b32a-4ac53a96e15c" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">projectproposaldoc.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="a7aa1cdf-be9a-4548-899d-1cfaf8497441" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">projecxt-docu.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1ff462c8-63ce-416b-8c64-09f843bc3bcd" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">protected-docu.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9e1720cb-51ef-4e13-9ee3-bd935778390d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">protected-docus.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="771c7143-ef2f-4c5c-8fc2-7f72c1a6be09" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">protected-files.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="d7a4d618-7d03-4a4f-8d6c-6a6dd240d6da" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">protectedarchive.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3a0b8d97-009e-41c1-ad15-a46b352d578a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">protectedfiles.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e99a0f94-5ff9-421e-9dde-2eff13131d8a" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">protectedvault.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="310b382e-7d1e-4444-87bc-a00609f9a9b5" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">requirements-onedrive.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c69145d9-4c55-4527-b681-213cdc0b056e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">requirementsfile.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="e1688372-4915-4345-a76f-71102783502d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">rfq-documents.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="55fbfffd-0733-4ec4-bad3-a6c8b0223161" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">safe-files.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="3b673706-c0d4-41ce-a7b3-64b2dfaaa0ab" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">safeguard-blockchain.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="4fcaa289-e67f-44a6-aaf4-171fe806d82b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">sec-files.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="0862a2c6-4d6d-4523-8784-d7db452290ec" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">secured-docu.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="f8034a91-4eb8-4644-a50a-ccd8c64f4472" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">secured-paycad.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6f8fa651-b9b2-4122-9bf3-e794c65f781d" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">secured-requirements.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="28610a6c-c911-40e7-bb81-ed0ebdbc44ed" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">secureddoc-portal.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="8cfe1ce8-9b1a-4693-bb51-7b290e08a339" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">secureddoc.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="80ac3880-0a24-43a4-adb7-bd765d31ef86" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">secureddocuments.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="9a80d226-5fda-4e68-b25d-22ba122a5b92" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">securedfiles.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="66a7401d-fbfc-4f84-8f78-676dcd1e5d71" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">securedfolder.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="6e65a084-0ae7-4af7-8be4-712207b20532" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">securedvault.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="bbedabb5-6c27-4365-aa29-6738e28e7317" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">shieldeddata.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2587606d-df05-44bc-a0de-8b7bff44fe2e" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">storeddocument.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="260b327a-321a-4a64-898d-6f47fdd061d0" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">storedfiles.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="c1080efa-8558-4ab2-8741-69dddfc1673b" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">updateoffice.store</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac9bb2be-6a6f-41b4-b8ca-680d88af7f23" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">veri-files.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="1bfb2e4e-0bf8-4709-b0a9-caad1e0d6aed" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">verifiles.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="659d75e6-75c3-4c4d-a737-719bd5d7939f" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">view-documents.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="ac7790da-9131-4357-b5da-ab700e0d0d48" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">wetransfer-documents.top</Content>
+      </IndicatorItem>
+      <IndicatorItem id="48fa7b12-a954-4649-b97a-488c5bfb60ee" condition="contains">
+        <Context document="DnsEntryItem" search="DnsEntryItem/Host" type="mir"/>
+        <Content type="string">s546p0em.requestrepo.com</Content>
+      </IndicatorItem>
+      <IndicatorItem id="2d5749ca-7171-4f73-a3e4-489505e9f201" condition="is">
+        <Context document="PortItem" search="PortItem/remoteIP" type="mir"/>
+        <Content type="IP">31.214.157.55</Content>
+      </IndicatorItem>
+    </Indicator>
+  </definition>
+</ioc>
